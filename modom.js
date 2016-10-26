@@ -49,6 +49,9 @@
     var setValue = function(selector, inputValue) {
         one(selector).value = inputValue
     }
+    var flipPage = function(selector) {
+        one(selector).style.transform = ('rotate(180deg)')
+    }
 
     window.md = {
         one: one,
@@ -66,6 +69,7 @@
         setProp: setProp,
         getValue: getValue,
         setValue: setValue,
+        flipPage: flipPage,
     }
 
 }())
